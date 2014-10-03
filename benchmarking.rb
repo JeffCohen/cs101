@@ -5,7 +5,7 @@ str = ""
 
 result = Benchmark.measure do
 
-  1.upto(100_000) { str += 'hello' }
+  1.upto(10_000) { str += 'hello' }
   # 1.upto(1_000_000) { |i| sum += i  }
 
 

@@ -2,9 +2,8 @@
 # 2. You must use as little memory as possible (fewest number of data attributes, etc)
 # 3. If you must loop, you can use while..., but not .each, etc.
 
-# Make this code work:
-colors = Tree.new
-colors.add("red")
+# Make this code work (feel free to adapt/change):
+colors = TreeNode.new("red")   # start root node with "red"
 colors.add("orange")
 colors.add("yellow")
 colors.add("green")
