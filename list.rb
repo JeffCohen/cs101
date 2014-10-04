@@ -1,4 +1,4 @@
-# 1. You may not include Enumerable or any built-in Ruby class that implements Enumerable.
+# 1. You may NOT use Array, Enumerable or any built-in Ruby class that implements Enumerable.
 # 2. You must use as little memory as possible (fewest number of data attributes, etc)
 # 3. If you must loop, you can use while..., but not .each, etc.
 
