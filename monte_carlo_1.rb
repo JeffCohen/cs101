@@ -7,3 +7,23 @@
 #
 # Can you prove or disprove it?
 
+got_double_sixes = 0
+number_of_simulations = 100_000
+number_of_simulations.times do
+  24.times do
+    die1 = rand(1..6)
+    die2 = rand(1..6)
+    if die1 == 6 && die2 == 6
+      got_double_sixes += 1
+      break
+    end
+  end
+
+end
+
+puts "It happened #{got_double_sixes/number_of_simulations.to_f} of the time"
+
+
+
+
+

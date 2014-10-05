@@ -4,13 +4,16 @@ require 'benchmark'
 # You CANNOT use any Array-related searching methods, like find, etc.
 
 def has?(list, term)
-
+  list.each do |item|
+    return true if item == term
+  end
+  false
 end
 
 
 # Level 1
 colors = ["red","orange","yellow","green","blue","indigo","violet"]
-puts has?(colors, 'green')
+puts has?(colors, 'green') # => true
 
 # Level 2
 # words = IO.readlines('subset.txt').map { |line| line.chomp }
